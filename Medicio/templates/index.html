@@ -402,16 +402,21 @@
     <section class="contact_section layout_padding">
       <div class="container">
         <div class="heading_container">
-          <h2>Get In Touch</h2>
+          <h2>Register a new patient</h2>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <div class="form_container contact-form">
               <form action="">
-                <div class="form-row">
+                {% csrf_token %} {{form}}
+                <!-- <div class="form-row">
                   <div class="col-lg-6">
                     <div>
-                      <input type="text" placeholder="Your Name" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Name"
+                      />
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -429,20 +434,20 @@
                     class="message-box"
                     placeholder="Message"
                   />
-                </div>
+                </div> -->
                 <div class="btn_box">
                   <button>SEND</button>
                 </div>
               </form>
             </div>
           </div>
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <div class="map_container">
               <div class="map">
                 <div id="googleMap"></div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
