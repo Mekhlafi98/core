@@ -1,5 +1,6 @@
 from django import forms
 from Medicio.models.patient import Patient
+from dal import autocomplete
 
 
 class PatientForm(forms.ModelForm):
@@ -11,3 +12,8 @@ class PatientForm(forms.ModelForm):
     class Meta:
         model = Patient
         fields = "__all__"
+        # widgets = {
+        #     'allergy': autocomplete.ModelSelect2Multiple(
+        #         url='allergy-autocomplete',
+        #     )
+        # }

@@ -1,2 +1,3 @@
-from Medicio.models import patient
-from Medicio.models import medication
+from Medicio.models.patient import *
+from Medicio.models.medication import *
+
